@@ -34,8 +34,10 @@ const commentSlice = createSlice({
         [getCommentAction.fulfilled]: (state, action)=>{
             state.loading = false;
             state.message = action.payload.message;
-            const formattedComment = action.payload.data.reverse();
-            state.data = [ ...formattedComment];
+            if(action.payload.data){
+                const formattedComment = action.payload.data.reverse();
+                state.data = [ ...formattedComment];
+            }
         },
         [getCommentAction.pending]: (state, action)=>{
             state.loading = true;
@@ -46,8 +48,10 @@ const commentSlice = createSlice({
         [getAllCommentAction.fulfilled]: (state, action)=>{
             state.loading = false;
             state.message = action.payload.message;
-            const formattedComment = action.payload.data.reverse();
-            state.data = [ ...formattedComment];
+            if(action.payload.data){
+                const formattedComment = action.payload.data.reverse();
+                state.data = [ ...formattedComment];
+            }
         },
         [getAllCommentAction.pending]: (state, action)=>{
             state.loading = true;

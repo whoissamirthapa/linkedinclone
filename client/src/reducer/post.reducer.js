@@ -39,8 +39,10 @@ const postSlice = createSlice({
         [getPostAction.fulfilled]: (state,action)=>{
             state.loading = false;
             state.message = action.payload.message;
-            const datawithnewsorting = action.payload.data.reverse();
-            state.data = [ ...datawithnewsorting]
+            if(action.payload.data){
+                const datawithnewsorting = action.payload.data.reverse();
+                state.data = [ ...datawithnewsorting]
+            }
         },
         [getPostAction.pending]: (state,action)=>{
             state.loading = true;
