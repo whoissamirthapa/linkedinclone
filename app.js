@@ -1,6 +1,7 @@
 import express from 'express';
 import 'dotenv/config'
 import cors from "cors"; 
+import path from 'path';
 import './config.js';
 import userRouter from './router/user.router.js';
 import postRouter from './router/post.router.js';
@@ -20,6 +21,9 @@ app.use(express.static("public"));
 
 if(process.env.NODE_ENV === "production"){
     app.use(express.static("clinet/build"));
+    app.get("*", (req,res)=>{
+        res.sendFile(path.resolve(__dirname, 'client','build','index.html'));
+    })
 }
 
 app.use("/api/user", userRouter);
