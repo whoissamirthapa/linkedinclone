@@ -9,7 +9,7 @@ import commentRouter from './router/comment.router.js';
 import likeRouter from './router/like.router.js';
 
 const app = express();
-// development cross origin
+// development (cross origin)
 //app.use(cors({credentials: true, origin: 'http://localhost:3000'}));
 app.use(cors());
 app.use(express.json());
