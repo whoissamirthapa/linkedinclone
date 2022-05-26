@@ -1,0 +1,15 @@
+.ReactModal__Overlay{
+    background-color: rgba(0,0,0,0.7) !important;
+}
+.ReactModal__Content{
+    width: 500px;
+    height: 380px;
+    top: 20% !important;
+    left: 50% !important;
+    transform: translate(-50%, -20%);
+}
+@media all and (max-width: 550px) {
+    .ReactModal__Content{
+        width: 98%;
+    }
+}

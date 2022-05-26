@@ -1,0 +1,131 @@
+.main_home_nav_container{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+.home_logo_container{
+    width: 50%;
+    max-width: 15rem;
+
+}
+.navhome_logo{
+    max-width: 20rem;
+}
+.st0{
+    fill-rule:evenodd;
+    clip-rule:evenodd;
+    fill:#2D6EAE;
+}
+.st1{
+    fill:#2B67B0;
+}
+.side_nav_{
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+.side_nav_child{
+    display: flex;
+    width: 100%;
+}
+.side_nav_ > .side_nav_child > .side_nav_ul{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 50%;
+    font-size: 1.4rem;
+    color: rgba(0,0,0,0.6);
+    margin-right: 3rem;
+}
+.side_nav_ > .side_nav_child > .side_nav_ul :hover .home_nav_icon{
+    color: black;
+}
+.side_nav_ > .side_nav_child > .side_nav_ul > li > a{
+    color: rgba(0,0,0,0.6);
+}
+.side_nav_ > .side_nav_child > .side_nav_ul > li > a:hover{
+    color: rgba(0,0,0,1);
+}
+.home_nav_icon{
+    font-size: 2.5rem;
+    color: rgba(0,0,0,0.6);
+}
+.side_nav_ > .side_nav_child > .side_nav_btn{
+    display: flex;
+    width: 50%;
+    align-items: center;
+}
+.side_nav_btn::before{
+    content: "";
+    width: 0.5px;
+    height: 90%;
+    display: inline-block;
+    background-color: #999;
+    margin-right: 1rem;
+}
+.side_nav_ > .side_nav_child > .side_nav_btn li button{
+    padding: 1rem 1.5rem;
+}
+.side_nav_ > .side_nav_child > .side_nav_btn li:first-child button{
+    border: none;
+    background-color: transparent;
+    margin-right: 1rem;
+    transition: all 100ms linear;
+    font-weight: 600;
+    border-radius: 4px;
+    color: rgba(0,0,0,0.6);
+}
+
+.side_nav_ > .side_nav_child > .side_nav_btn li:first-child button:hover{
+    background-color: #f3f3f3;
+    color: rgba(0,0,0,1);;
+}
+.side_nav_ > .side_nav_child > .side_nav_btn li:last-child button{
+    border-radius: 5rem;
+    border: 1px solid #2B67B0;
+    transition: all 100ms linear;
+    color: #2B67B0;
+    font-weight: 600;
+}
+.side_nav_ > .side_nav_child > .side_nav_btn li:last-child button:hover{
+    border: 2px solid #2B67B0;
+    background-color: #dae8f9;
+    color: #133968;
+}
+@media all and (max-width: 1200px) {
+    .main_home_nav_container{
+        width: 99%;
+    }
+}
+@media all and (max-width: 880px) {
+    .home_logo_container{
+        width: 20%;
+    }
+    .side_nav_{
+        width: 80%;
+    }
+}
+@media all and (max-width: 515px) {
+    .main_home_nav_container{
+        flex-wrap: wrap;
+    }
+    .home_logo_container{
+        width: 20%;
+        min-width: 10rem;
+    }
+    .side_nav_{
+        width: 100%;
+    }
+    .side_nav_child{
+        flex-wrap: wrap;
+    }
+    .side_nav_ > .side_nav_child > .side_nav_ul{
+        width: 90%;
+    }
+    .side_nav_ > .side_nav_child > .side_nav_btn{
+        width: 90%;
+        min-width: 30rem;
+        margin-top: 1rem;
+    }
+}

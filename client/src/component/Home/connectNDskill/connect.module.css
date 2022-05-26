@@ -1,0 +1,104 @@
+.container_connkll{
+    width: 80%;
+    display: flex;
+    margin: auto;
+    padding: 15rem 0;
+}
+.container_connkll > section{
+    width: 50%;
+}
+.img_here_conn > img{
+    max-width: 300px;
+}
+.connect_container > section:nth-child(2) > section:first-child,
+.skill_container > section:nth-child(2) > section:first-child{
+    font-size: 48px;
+    font-weight: 200;
+    color: rgba(0, 0, 0, 0.9);
+    line-height: 1.25;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+.connect_container > section:last-child > section:last-child >a{
+    height: min-content;
+    min-height: 56px;
+    border-radius: 28px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.9);
+    border: 1px solid black;
+}
+.connect_container > section:last-child > section:last-child >a:hover{
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.skill_container > section:last-child > section:last-child > button{
+    width: 340px;
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0,0.16);
+    display: flex;
+    justify-content: space-between;
+    height: min-content;
+    min-height: 48px;
+    text-align: center;
+    align-items: center;
+    padding: 0 2rem;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: -1.3rem;
+    background-color: transparent;
+    color: rgba(0, 0, 0, 0.9);
+}
+.skill_container > section:last-child > section:last-child > button:hover{
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+@media all and (max-width: 1200px) {
+    .container_connkll{
+        display: block;
+        width: 100%;
+    }
+    .container_connkll > section{
+        width: 100%;
+        display: flex;
+    }
+    .container_connkll > section > section:first-child{
+        width: 35%;
+    }
+    .container_connkll > section > section:last-child{
+        width: 65%;
+    }
+}
+@media all and (max-width: 992px) {
+    .container_connkll > section{
+        width: 100%;
+        display: block;
+    }
+    .container_connkll > section > section:first-child{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .container_connkll > section > section:last-child{
+        
+        width: 100%;
+    }
+    .connect_container{
+       margin-bottom: 10rem;
+    }
+}
+@media all and (max-width: 768px) {
+    .skill_container > section:last-child > section:last-child > button{
+        width: 98%;
+        margin: auto;
+    }
+}
+@media all and (max-width: 320px) {
+    .skill_container > section:last-child > section:last-child > button{
+        padding: 0;
+    }
+}

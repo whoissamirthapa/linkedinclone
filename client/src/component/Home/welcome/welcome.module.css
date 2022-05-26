@@ -1,0 +1,94 @@
+.welcome_container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    padding-top: 5rem;
+}
+.welcome_container_desc{
+    width: 50%;
+}
+.welcome_img_container{
+    width: 50%;
+}
+.welcome_img_container > img{
+    width: 125%;
+    object-fit: contain;
+}
+.welcome_container_header{
+    color: #8f5849;
+    font-size: 56px;
+    font-weight: 200;
+}
+.welcome_tab{
+    height: 6rem;
+    border-radius: 8px;
+    border: 1px solid rgba(0,0,0,0.08);
+    width: 80%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 1rem;
+    padding-left: 2rem;
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 2rem;
+}
+.welcome_tab:hover{
+    box-shadow: 0 0 8px 3px rgba(0,0,0,0.3);
+}
+a:visited{
+    color: #8344cc;;
+}
+
+
+
+
+
+@media all and (max-width: 1200px) {
+    .welcome_container{
+        width: 99%;
+    }
+    .welcome_img_container > img{
+        width: 100%;
+        object-fit: contain;
+    }
+}
+@media all and (max-width: 768px) {
+    .welcome_container{
+        display: block;
+    }
+    .welcome_container_desc{
+        width: 100%;
+    }
+    .welcome_img_container{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .welcome_img_container > img{
+        width: 80%;
+        object-fit: contain;
+    }
+    .welcome_container_header{
+        font-size: 32px;
+        margin-bottom: 2rem;
+    }
+    .welcome_tab{
+        width: 99%;
+    }
+}
+@media all and (max-width: 515px) {
+    .main_home_nav_container{
+        flex-wrap: wrap;
+    }
+    .home_logo_container{
+        width: 20%;
+        min-width: 10rem;
+    }
+    .side_nav_{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+}

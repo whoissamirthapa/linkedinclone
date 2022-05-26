@@ -1,0 +1,9 @@
+.container_err{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2.5rem;
+    height: 98vh;
+    color: rgba(0,0,0,0.6);
+}

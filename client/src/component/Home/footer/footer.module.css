@@ -1,0 +1,35 @@
+.home_footer{
+    background-color: rgb(238, 235, 235);
+    display: flex;
+    padding: 2rem 0;
+}
+.home_footer > section:first-child > img{
+    width: 40%;
+    max-width: 10rem;
+}
+.home_footer > section{
+    width: 20%;
+}
+.home_footer > section > ul > li:first-child{
+    font-size: 1.7rem;
+    line-height: 1.25;
+    font-weight: 600;
+    color: rgba(0,0,0,0.9);
+    margin-bottom: 1.5rem;
+}
+.home_footer > section > ul > li:not(:first-child){
+    font-size: 1.6rem;
+    line-height: 1.25;
+    font-weight: 600;
+    color: rgba(0,0,0,0.6);
+    margin-bottom: 1rem;
+}
+@media all and (max-width: 768px) {
+    .home_footer {
+        display: block;
+    }
+    .home_footer > section{
+        width: 90%;
+        margin: 0 auto 2.5rem auto;
+    }
+}
