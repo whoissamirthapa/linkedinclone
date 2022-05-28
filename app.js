@@ -19,17 +19,19 @@ app.use(express.static("public"));
 //     res.send("Hello from server");
 // })
 
+
+app.use("/api/user", userRouter);
+app.use("/api/posts", postRouter);
+app.use("/api/comment", commentRouter);
+app.use("/api/like", likeRouter);
+
+
 if(process.env.NODE_ENV === "production"){
     app.use(express.static("client/build"));
     app.get("*", (req,res)=>{
         res.sendFile(path.resolve('client','build','index.html'));
     })
 }
-
-app.use("/api/user", userRouter);
-app.use("/api/posts", postRouter);
-app.use("/api/comment", commentRouter);
-app.use("/api/like", likeRouter);
 
 
 const PORT = process.env.PORT || 5000
